@@ -235,7 +235,7 @@ const SECTIONS = DATA.sections;
 const TOTAL = DATA.total;
 const LETTERS = "ABCDE";
 
-const K_ANS = "zyq_answers_v2", K_POS = "zyq_pos_v2", K_START = "zyq_start_v2", K_WRONG = "zyq_wrong_v2";
+const K_ANS = "zyq_answers_v3", K_POS = "zyq_pos_v3", K_START = "zyq_start_v3", K_WRONG = "zyq_wrong_v3";
 
 function rd(k, d){ try{ const v = localStorage.getItem(k); return v ? JSON.parse(v) : d; }catch(e){ return d; } }
 function wr(k, v){ try{ localStorage.setItem(k, JSON.stringify(v)); }catch(e){} }
