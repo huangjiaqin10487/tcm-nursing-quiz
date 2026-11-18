@@ -354,7 +354,7 @@ function renderHome(){
   const pids = SECTIONS.map(s=>s.id);
   const cards = SECTIONS.map((sec, i)=>{
     const st = statsOf(sec.id);
-    const icon = sec.id === "t" ? "教" : ("一二三四五六"[i] || String(i+1));
+    const icon = sec.id === "t" ? "教" : ("一二三四五六七八九"[i] || String(i+1));
     const prog = st.done
       ? `<span class="prog">已答 ${st.done}/${st.n} · 正确率 ${st.acc}%${st.done===st.n?" · 已完成":""}</span>`
       : `<span class="prog zero">尚未开始</span>`;
